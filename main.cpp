@@ -9,13 +9,14 @@ void setConsoleSize() {
     HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 
     // Set the console screen buffer size
-    COORD bufferSize = { width, height };
+    COORD bufferSize = { width-1, height-1};
     SetConsoleScreenBufferSize(consoleHandle, bufferSize);
 
     // Set the console window size and position
-    SMALL_RECT windowSize = { 0, 0, static_cast<SHORT>(width - 1), static_cast<SHORT>(height - 1) };
+    SMALL_RECT windowSize = { 0, 0, width-1,height-1};
     SetConsoleWindowInfo(consoleHandle, TRUE, &windowSize);
 }
+
 
 // Function to set the cursor position in the console
 void setCursor(int x, int y) {
