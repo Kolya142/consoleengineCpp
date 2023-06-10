@@ -26,3 +26,27 @@
 
 1686407582 e:\cb\consoleengine\include\settings.h
 
+1686408015 source:e:\cb\consoleenginecpp\main.cpp
+	<iostream>
+	<stdio.h>
+	<Windows.h>
+	"player.h"
+	"settings.h"
+	"Map.h"
+	<chrono>
+
+1686408551 e:\cb\consoleenginecpp\include\player.h
+	"Map.h"
+	"settings.h"
+	<stdio.h>
+	<Windows.h>
+
+1686408015 e:\cb\consoleenginecpp\include\map.h
+	"settings.h"
+
+1686408015 e:\cb\consoleenginecpp\include\settings.h
+
+1686408015 source:e:\cb\consoleenginecpp\src\map.cpp
+	"Map.h"
+	"iostream"
+
