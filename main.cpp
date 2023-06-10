@@ -66,20 +66,24 @@ int main()
 {
     setConsoleSize();
     map.init();
+    int* p = map.load();
     hideCursor();
-    Player player = Player(0, 0);
+    Player player = Player(p[0], p[1]);
     float st;
-    float et;
+    std::string black = "";
+    for (int i = 0; i < width; i ++) black += " ";
     bool frist = true;
     while (GetKeyState(VK_ESCAPE) >= 0) {
-        getCurrentTimeInMilliseconds();
+        st = getCurrentTimeInMilliseconds();
         map.clear();
         player.update(&map, width, height-1);
         draw(frist);
         setCursor(0, height-1);
-        std::cout << "fps: " << 1/(et-st);
-        et = getCurrentTimeInMilliseconds();
+        std::cout << black;
+        setCursor(0, height-1);
+        std::cout << "fps: " << "not implemented";
         if (frist) frist = !frist;
     }
+    while(true);
     return 0;
 }
