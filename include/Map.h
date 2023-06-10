@@ -5,7 +5,7 @@
 
 class Map {
 public:
-    char screen_map[height][width];
+    char screen_map[height-1][width];
     void init();
     void clear();
 };

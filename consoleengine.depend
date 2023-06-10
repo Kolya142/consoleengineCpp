@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1686407617 source:e:\cb\consoleengine\main.cpp
+	<iostream>
+	<stdio.h>
+	<Windows.h>
+	"player.h"
+	"settings.h"
+	"Map.h"
+	<chrono>
+
+1686247427 e:\cb\consoleengine\include\player.h
+	"Map.h"
+	"settings.h"
+	<stdio.h>
+	<Windows.h>
+
+1686247900 source:e:\cb\consoleengine\src\player.cpp
+	"player.h"
+
+1686404189 source:e:\cb\consoleengine\src\map.cpp
+	"Map.h"
+	"iostream"
+
+1686404147 e:\cb\consoleengine\include\map.h
+	"settings.h"
+
+1686407582 e:\cb\consoleengine\include\settings.h
+
