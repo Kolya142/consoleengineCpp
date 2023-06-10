@@ -10,6 +10,7 @@ class Player
     public:
         int x = 0;
         int y = 0;
+        bool jump = false;
         Player(int _x, int _y);
         virtual void update(Map *map, int width, int height);
 
